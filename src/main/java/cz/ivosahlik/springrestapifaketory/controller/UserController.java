@@ -1,6 +1,7 @@
 package cz.ivosahlik.springrestapifaketory.controller;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 
 /**
  * Intellij Idea
@@ -8,6 +9,11 @@ import org.springframework.stereotype.Controller;
  */
 @Controller
 public class UserController {
+
+    @GetMapping({"","/", "/index"})
+    public String index() {
+        return "index";
+    }
 
 
 

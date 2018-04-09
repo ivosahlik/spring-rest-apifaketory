@@ -1,0 +1,88 @@
+{
+  "data": [
+    {
+      "gender": "female",
+      "name": {
+        "title": "Ms.",
+        "first": "Cleta",
+        "last": "Okuneva"
+      },
+      "location": {
+        "street": "4405 Hilll Walks",
+        "city": "North Nasirport",
+        "state": "Washington",
+        "postcode": "97591"
+      },
+      "email": "imogene.hudson@gmail.com",
+      "login": {
+        "username": "stoltenberg.ethyl",
+        "password": "]F4Z{x&@p",
+        "md5": "88bb1289ba94588b3329c684208f6356",
+        "sha1": "2d081afacd0946adde34b2639a0cc9fb6cd43d6a",
+        "sha256": "1c360d8653a516800d5886715297cd4bbea2a0f4939f78818ef44621d61d69ac"
+      },
+      "phone": "(877) 263-1681",
+      "job": {
+        "title": "Merchandise Displayer OR Window Trimmer",
+        "company": "Schmitt-Koelpin"
+      },
+      "billing": {
+        "card": {
+          "type": "MasterCard",
+          "number": "5450935274947366",
+          "expiration_date": {
+            "date": "2018-11-28 14:13:23.000000",
+            "timezone_type": 3,
+            "timezone": "UTC"
+          },
+          "iban": "DJ20083987904488038057465584",
+          "swift": "IKNKARYT"
+        }
+      },
+      "language": "su",
+      "currency": "MWK"
+    },
+    {
+      "gender": "male",
+      "name": {
+        "title": "Mrs.",
+        "first": "Modesta",
+        "last": "Barton"
+      },
+      "location": {
+        "street": "64288 Reichert Coves Suite 703",
+        "city": "East Jacquelyn",
+        "state": "Utah",
+        "postcode": "90264-7064"
+      },
+      "email": "lindsay.rohan@yahoo.com",
+      "login": {
+        "username": "micah.rolfson",
+        "password": "8[<VW9",
+        "md5": "ad258bb6714529287618e27a81bc4613",
+        "sha1": "2e6e04307fa5d07f0c4cf6a3e0f8862e6e060567",
+        "sha256": "a4555cd5eaafaa594ec44686f22828826775be68202a40d22a23e0c31eeafa44"
+      },
+      "phone": "800-735-4269",
+      "job": {
+        "title": "Occupational Health Safety Specialist",
+        "company": "Shanahan-Zieme"
+      },
+      "billing": {
+        "card": {
+          "type": "Visa",
+          "number": "4716829065785",
+          "expiration_date": {
+            "date": "2020-04-14 16:36:54.000000",
+            "timezone_type": 3,
+            "timezone": "UTC"
+          },
+          "iban": "CZ3276463487053844307942",
+          "swift": "BFMQGBR28IJ"
+        }
+      },
+      "language": "tg",
+      "currency": "XOF"
+    }
+  ]
+}
