@@ -3,18 +3,17 @@ package cz.ivosahlik.springrestapifaketory.api;
 import java.util.List;
 
 /**
- * Intellij Idea
- * Created by ivosahlik on 09/04/2018
+ * Created by jt on 9/21/17.
  */
 public class UserData {
 
-    private List<User> data;
+    List<User> data;
 
-    public List<User> getUser() {
+    public List<User> getData() {
         return data;
     }
 
-    public void setUser(List<User> data) {
+    public void setData(List<User> data) {
         this.data = data;
     }
 }

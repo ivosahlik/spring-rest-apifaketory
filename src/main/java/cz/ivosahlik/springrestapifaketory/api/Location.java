@@ -19,4 +19,5 @@ public class Location implements Serializable {
     private String state;
     private String postcode;
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
+
 }

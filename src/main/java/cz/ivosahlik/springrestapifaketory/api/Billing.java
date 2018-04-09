@@ -1,7 +1,7 @@
 
 package cz.ivosahlik.springrestapifaketory.api;
 
-import lombok.Data;
+import lombok.*;
 
 import java.io.Serializable;
 import java.util.HashMap;
