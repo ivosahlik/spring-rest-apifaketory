@@ -12,4 +12,6 @@ public interface ApiService {
 
     List<User> getUsers(Integer limit);
 
+    List<User> getUsersUri(Integer limit);
+
 }

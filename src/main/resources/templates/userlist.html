@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title><span th:text="#{userlist.title}"></span></title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"
+          th:href="@{/webjars/bootstrap/4.0.0/css/bootstrap.min.css}"
+    />
+
+    <script src="/webjars/jquery/3.3.1-1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"
+            th:href="@{/webjars/bootstrap/4.0.0/js/bootstrap.min.js}">
+
+    </script>
+</head>
+<body>
+
+
+<div class="container" style="margin-top: 20px">
+
+    <div class="panel-heading">
+        <h1 class="panel-title" th:text="#{userlist.h1}"></h1>
+    </div>
+    <div class="panel-body">
+        <div class="table-responsive" th:if="${not #lists.isEmpty(users)}">
+            <table class="table table-hover ">
+                <thead class="thead-inverse">
+                <tr>
+                    <th th:text="#{userlist.firstName}"></th>
+                    <th th:text="#{userlist.lastName}"></th>
+                    <th th:text="#{userlist.gender}"></th>
+                    <th th:text="#{userlist.email}"></th>
+                    <th th:text="#{userlist.language}"></th>
+                    <th th:text="#{userlist.phone}"></th>
+                </tr>
+                </thead>
+                <tr th:each="user : ${users}">
+                    <td th:text="${user.name.first}"></td>
+                    <td th:text="${user.name.last}"></td>
+                    <td th:text="${user.gender}"></td>
+                    <td th:text="${user.email}"></td>
+                    <td th:text="${user.language}"></td>
+                    <td th:text="${user.phone}"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

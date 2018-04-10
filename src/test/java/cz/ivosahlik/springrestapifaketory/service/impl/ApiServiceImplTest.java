@@ -36,4 +36,10 @@ public class ApiServiceImplTest {
         List<User> list = apiService.getUsers(3);
         assertEquals(4, list.size());
     }
+
+    @Test
+    public void getUsersUri() {
+        List<User> list = apiService.getUsers(5);
+        assertEquals(6, list.size());
+    }
 }
