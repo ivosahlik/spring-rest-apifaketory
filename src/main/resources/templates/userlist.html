@@ -4,24 +4,13 @@
     <meta charset="UTF-8"/>
     <title><span th:text="#{userlist.title}"></span></title>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"
-          th:href="@{/webjars/bootstrap/4.0.0/css/bootstrap.min.css}"
-    />
+    <th:block th:include="common/common :: header"></th:block>
 
-    <script src="/webjars/jquery/3.3.1-1/jquery.min.js"></script>
-
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-            crossorigin="anonymous"
-            th:href="@{/webjars/bootstrap/4.0.0/js/bootstrap.min.js}">
-
-    </script>
 </head>
 <body>
 
 
-<div class="container" style="margin-top: 20px">
+<div class="container padding_top margin_top">
 
     <div class="panel-heading">
         <h1 class="panel-title" th:text="#{userlist.h1}"></h1>
@@ -50,6 +39,12 @@
             </table>
         </div>
     </div>
+
+    <a class="btn btn-primary" th:href="@{/}"><span th:text="#{userlist.button.back}"></span></a>
+
+
+    <th:block th:include="common/common :: footer"></th:block>
+
 </div>
 
 </body>

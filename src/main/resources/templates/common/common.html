@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+
+    <th:block th:fragment="header">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+              integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"
+              th:href="@{/webjars/bootstrap/4.0.0/css/bootstrap.min.css}"
+        />
+
+        <script src="/webjars/jquery/3.3.1-1/jquery.min.js"></script>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+                integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+                crossorigin="anonymous"
+                th:href="@{/webjars/bootstrap/4.0.0/js/bootstrap.min.js}">
+
+        </script>
+
+        <link rel="stylesheet" href="/static/styles.css" th:href="@{/styles.css}"/>
+
+    </th:block>
+
+    <th:block th:fragment="footer">
+
+        <br/><br/><br/><br/><br/><br/><br/>
+
+        <div class="container">
+            <div class="alert alert-dark">
+                <h5>© Ivo Vošahlík | this project on GitHub</h5>
+                <h8>
+                    Api Faketory is a Java aggregator focused on Java SE, Spring Framework and Hibernate, Thymeleaf, REST.<br/>
+                    I used https://apifaketory.docs.apiary.io, http://www.jsonschema2pojo.org/
+                </h8>
+            </div>
+        </div>
+
+    </th:block>
+
+
+
+</html>

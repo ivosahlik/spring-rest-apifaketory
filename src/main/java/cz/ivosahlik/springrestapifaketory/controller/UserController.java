@@ -43,11 +43,7 @@ public class UserController {
 
 
     @PostMapping("/users")
-    public String formPost(Model model, ServerWebExchange serverWebExchange){
-
-        MultiValueMap<String, String> map = serverWebExchange.getFormData().block();
-
-        Integer limit = new Integer(map.get(LIMIT_PARAM).get(0));
+    public String formPost(@RequestParam("limit") Integer limit, Model model){
 
         log.debug("Received Limit value: " + limit);
         if(limit == null || limit == 0 || limit < 2){

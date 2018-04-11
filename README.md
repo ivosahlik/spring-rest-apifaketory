@@ -10,3 +10,9 @@ itin    Iterate (for..in)
 itli    Iterate over a List
 itar    Iterate elements of array 
 ritar   Iterate elements of array in reverse order 
+
+# i18n
+
+http://localhost:8080/?lang=cz
+
+http://localhost:8080/?lang=en
