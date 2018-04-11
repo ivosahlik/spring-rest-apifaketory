@@ -5,3 +5,11 @@
 .margin_top {
     margin-top: 20px;
 }
+
+.highlight_red_color {
+    background-color: red;
+}
+
+.highlight_grey_color {
+    background-color: #cccfd3;
+}

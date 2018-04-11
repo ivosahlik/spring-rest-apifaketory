@@ -10,7 +10,7 @@
 <body>
 
 
-<div class="container padding_top margin_top">
+<div class="container margin_top">
 
     <div class="panel-heading">
         <h1 class="panel-title" th:text="#{userlist.h1}"></h1>
@@ -28,7 +28,7 @@
                     <th th:text="#{userlist.phone}"></th>
                 </tr>
                 </thead>
-                <tr th:each="user : ${users}">
+                <tr th:each="user : ${users}" th:class="${user.language} eq 'en' ? 'highlight_red_color' : 'highlight_grey_color'">
                     <td th:text="${user.name.first}"></td>
                     <td th:text="${user.name.last}"></td>
                     <td th:text="${user.gender}"></td>
