@@ -16,3 +16,5 @@ ritar   Iterate elements of array in reverse order
 http://localhost:8080/?lang=cz
 
 http://localhost:8080/?lang=en
+
+# Intellij Idea - refactor -> extract -> constant

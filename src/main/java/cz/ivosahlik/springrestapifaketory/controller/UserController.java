@@ -25,9 +25,11 @@ import java.util.List;
 @Controller
 public class UserController {
 
-    private ApiServiceImpl apiService;
-
+    public static final String INDEX = "index";
+    public static final String USERLIST = "userlist";
     private static final String LIMIT_PARAM = "limit";
+
+    private ApiServiceImpl apiService;
 
     @Autowired
     public UserController(ApiServiceImpl apiService) {
@@ -38,12 +40,12 @@ public class UserController {
     public String index() {
         List<User> list = apiService.getUsers(3);
         log.debug("get users size() {} " + list.size());
-        return "index";
+        return INDEX;
     }
 
 
     @PostMapping("/users")
-    public String formPost(@RequestParam("limit") Integer limit, Model model){
+    public String formPost(@RequestParam(LIMIT_PARAM) Integer limit, Model model){
 
         log.debug("Received Limit value: " + limit);
         if(limit == null || limit == 0 || limit < 2){
@@ -56,7 +58,7 @@ public class UserController {
 //        model.addAttribute("users", apiService.getUsers(limit));
         model.addAttribute("users", apiService.getUsersUri(limit));
 
-        return "userlist";
+        return USERLIST;
     }
 
 
