@@ -50,9 +50,11 @@ public class UserController {
         Integer limit = new Integer(map.get(LIMIT_PARAM).get(0));
 
         log.debug("Received Limit value: " + limit);
-        if(limit == null || limit == 0){
+        if(limit == null || limit == 0 || limit < 2){
             log.debug("Setting limit to default of 10");
             limit = 10;
+        } else {
+            limit = limit - 1;
         }
 
 //        model.addAttribute("users", apiService.getUsers(limit));
