@@ -1,12 +1,10 @@
 package cz.ivosahlik.springrestapifaketory.service.impl;
 
-import cz.ivosahlik.springrestapifaketory.api.Name;
 import cz.ivosahlik.springrestapifaketory.api.User;
-import cz.ivosahlik.springrestapifaketory.api.UserData;
+import cz.ivosahlik.springrestapifaketory.api.UserDataDto;
 import cz.ivosahlik.springrestapifaketory.service.ApiService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.http.HttpEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.util.UriComponentsBuilder;
@@ -38,16 +36,16 @@ public class ApiServiceImpl implements ApiService {
     @Override
     public List<User> getUsers(Integer limit) {
         log.debug("limit: {} " + limit);
-        UserData userData = restTemplate.getForObject( userApiUrl + limit, UserData.class);
-        return userData.getData();
+        UserDataDto userDataDto = restTemplate.getForObject( userApiUrl + limit, UserDataDto.class);
+        return userDataDto.getData();
     }
 
     @Override
     public List<User> getUsersUri(Integer limit) {
         log.debug("limit: {} " + limit);
         UriComponentsBuilder uriComponentsBuilder = UriComponentsBuilder.fromUriString(userApiUri).queryParam(LIMIT_PARAM, limit);
-        UserData userData = restTemplate.getForObject(uriComponentsBuilder.toUriString(), UserData.class);
-        return userData.getData();
+        UserDataDto userDataDto = restTemplate.getForObject(uriComponentsBuilder.toUriString(), UserDataDto.class);
+        return userDataDto.getData();
     }
 
 

@@ -5,7 +5,7 @@ import java.util.List;
 /**
  * Created by jt on 9/21/17.
  */
-public class UserData {
+public class UserDataDto {
 
     List<User> data;
 

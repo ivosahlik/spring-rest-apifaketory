@@ -14,15 +14,17 @@
         <a class="btn btn-primary" th:href="@{/?lang=cz}">CZ</span></a>
         <a class="btn btn-primary" th:href="@{/?lang=en}">EN</span></a>
 
-        <form th:action="@{/users/}" method="post">
+        <div class="margin_top">
+            <form th:action="@{/users/}" method="post">
 
-            <div class="form-group">
-                <label th:text="#{index.description}"></label>
-                <input id="limit" name="limit" type="number" class="form-control"/>
-            </div>
+                <div class="form-group">
+                    <label th:text="#{index.description}"></label>
+                    <input id="limit" name="limit" type="number" class="form-control"/>
+                </div>
 
-            <button type="submit" class="btn btn-primary"><span th:text="#{index.sign}"></span></button>
-        </form>
+                <button type="submit" class="btn btn-primary"><span th:text="#{index.sign}"></span></button>
+            </form>
+        </div>
     </div>
 
     <th:block th:include="common/common :: footer"></th:block>
